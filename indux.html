@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>Celutec - Reparación de Celulares</title>
+  <link rel="manifest" href="/manifest.json">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1cb5e0, #000046);
+      color: white;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      color: #39FF14;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .section {
+      padding: 20px;
+    }
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin: 10px 0;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .whatsapp-btn, .instagram-btn {
+      position: fixed;
+      bottom: 80px;
+      background-color: transparent;
+      padding: 0;
+      border-radius: 50%;
+      font-size: 0;
+      box-shadow: none;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+    .whatsapp-btn img, .instagram-btn img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    .whatsapp-btn {
+      right: 20px;
+    }
+    .instagram-btn {
+      right: 90px;
+    }
+    .whatsapp-btn:hover, .instagram-btn:hover {
+      transform: scale(1.1);
+    }
+    nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #111;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 2px solid #39FF14;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      font-size: 14px;
+    }
+    nav a:hover {
+      color: #00FF00;
+    }
+    nav a.active {
+      color: #00FF00;
+      font-weight: bold;
+      border-bottom: 2px solid #00FF00;
+      padding-bottom: 2px;
+    }
+    .section-container {
+      padding-bottom: 80px;
+    }
+    .logo-flotante {
+      position: fixed;
+      bottom: 150px;
+      right: 20px;
+      z-index: 1000;
+      width: 50px;
+      height: 50px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .service-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #39FF14;
+      border-radius: 12px;
+      width: 260px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #39FF14;
+    }
+    .service-card img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+    .why-choose-us {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      text-align: center;
+    }
+    .why-choose-us h2 {
+      color: #00FFAA;
+    }
+    .why-choose-us ul {
+      list-style: none;
+      padding: 0;
+    }
+    .why-choose-us li {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Celutec</h1>
+    <p>Tu celular como nuevo, sin vueltas. Gregorio de Laferrere, Buenos Aires. Olvieri 3733</p>
+  </header>
+
+  <img src="https://celutec.com/logo_celutec.png" alt="Celutec Logo" class="logo-flotante">
+
+  <a href="https://wa.me/5491123456789" class="whatsapp-btn" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+
+  <a href="https://www.instagram.com/celutec.rey" class="instagram-btn" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+  </a>
+
+  <section class="section services">
+    <div class="service-card">
+      <img src="https://imgs.search.brave.com/ZlJNl_0DjnlnKlrlQsdX4MK0Z9AbtEKD126Xyfkgr7g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni85NDMvOTQzNTA5/LnBuZz9zZW10PWFp/c19oeWJyaWQ" alt="Pantalla">
+      <h3>Cambio de Pantalla</h3>
+      <p>Reemplazamos pantallas rotas o dañadas con repuestos de calidad.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://static.vecteezy.com/system/resources/previews/033/530/040/non_2x/battery-low-power-indicator-icon-free-png.png" alt="Batería">
+      <h3>Reemplazo de Batería</h3>
+      <p>Tu celular vuelve a durar todo el día con una batería nueva.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://imgs.search.brave.com/F802rYQey7TwyuMDiQxFpcGOvRRqRO-tXpUjCls03wY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8zODYxLzM4NjEy/NzIucG5nP3NlbXQ9/YWlzX2h5YnJpZA" alt="Agua">
+      <h3>Daños por Agua</h3>
+      <p>Rescatamos tu equipo si se mojó o sufrió humedad.</p>
+    </div>
+  </section>
+
+  <section class="section why-choose-us">
+    <h2>¿Por qué elegir Celutec?</h2>
+    <ul>
+      <li>Atención rápida y personalizada</li>
+      <li>Repuestos originales y garantía</li>
+      <li>Más de 5 años de experiencia</li>
+      <li>Ubicación estratégica en Gregorio de Laferrere</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>¿Cómo llegar?</h2>
+    <p>Nos encontramos en <strong>Olvieri 3733, Gregorio de Laferrere, Buenos Aires</strong>.</p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Olvieri+3733,+Buenos+Aires,+Argentina
+" target="_blank">Ver en Google Maps</a>
+  </section>
+
+  <section class="section">
+    <h2>Consultar presupuesto</h2>
+    <p>Escribinos por WhatsApp y contanos el problema de tu celular:</p>
+    <a class="btn" href="https://wa.me/5491171923151" target="_blank">Pedir presupuesto</a>
+  </section>
+</body>
+</html>
